@@ -94,6 +94,7 @@ export const useProductStore = defineStore("ProductStore", {
             category: product.category,
           });
           this.init(); //refresh display after new post is added so it shows up
+          console.log(docRef.id);
         } catch (error) {
           console.error("Error adding product to Firestore: ", error);
           throw error;
